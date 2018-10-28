@@ -41,7 +41,7 @@ function onLoad(){
 	
 	var shuffle = true; //Randomize words
 	//$("#center .primary").text(word);
-	document.getElementById("center").getElementsByClassName("primary").innerHTML = word;
+	document.getElementById("center").getElementsByClassName("primary")[0].innerHTML = word;
 	
 	if(display == false){
 		$(".secondary").text("");
