@@ -40,7 +40,8 @@ function onLoad(){
 	
 	
 	var shuffle = true; //Randomize words
-	$("#center .primary").text(word);
+	//$("#center .primary").text(word);
+	document.getElementById("center").getElementsByClassName("primary").innerHTML = word;
 	
 	if(display == false){
 		$(".secondary").text("");
