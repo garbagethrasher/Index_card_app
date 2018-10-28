@@ -44,10 +44,14 @@ function onLoad(){
 	document.getElementById("center").getElementsByClassName("primary")[0].innerHTML = word;
 	
 	if(display == false){
-		$(".secondary").text("");
+		//$(".secondary").text("");
+		document.getElementsByClassName("secondary")[0].innerHTML = "";
+		document.getElementsByClassName("secondary")[1].innerHTML = "";
 	}else{
-		$("#top .secondary").text(def);
-		$("#bottom .secondary").text(ex);
+		//$("#top .secondary").text(def);
+		document.getElementById("top").getElementsByClassName("secondary")[0].innerHTML = def;
+		//$("#bottom .secondary").text(ex);
+		document.getElementById("bottom").getElementsByClassName("secondary")[0].innerHTML = ex;
 		word = randomKey(info);
 	}
 	
